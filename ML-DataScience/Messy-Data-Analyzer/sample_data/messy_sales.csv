@@ -1,0 +1,209 @@
+order_id,date,region,category,product,quantity,price,revenue
+61,01-01-2024,South,Clothing,Laptop,49,$337.78,16551.22
+60,15-01-2024,South,electronics,Jeans,45,204.24,9190.8
+85,2024-01-02,NORTH,Clothing,Pizza,37,106.58,3943.46
+149,2024/01/27,NORTH,Clothing,Jeans,3,147.38,442.14
+78,01/21/2024,South, Food,Laptop,,395.36,7907.2
+20,2024-01-19,North, Food,Burger,4,29.82,119.28
+151,23-01-2024,South ,Electronics,Pizza,1,482.44,482.44
+40,01/23/2024,West,Electronics,Tablet,27,$168.79,4557.33
+7,2024/01/09,South,Clothing,Burger,14,329.44,4612.16
+72,2024-01-20,South,Clothing,Jeans,15,$374.65,5619.75
+186,15-01-2024,NORTH,Food,Shirt,9,48.21,433.89
+146,2024/01/28,North, Food,Pizza,34,107.63,3659.42
+164,2024/01/18, North,Clothing,Phone,30,176.35,5290.5
+139,2024/01/08,West,CLOTHING,Burger,4,30.02,120.08
+86,,East,Clothing,Jeans,12,59.41,712.92
+49,2024/01/14,north,Food,Phone,6,143.07,858.42
+140,2024/01/05,north, Food,Burger,,$204.61,10025.89
+15,2024-01-08,South,Electronics,Burger,5,259.51,1297.55
+4,2024/01/03,north, Food,Burger,,100.18,3706.66
+46,2024-01-25,East,Food,Shirt,38,17.71,672.98
+2,2024-01-18,West, Food,Tablet,15,227.36,3410.4
+151,23-01-2024,South ,Electronics,Pizza,1,482.44,482.44
+121,01/03/2024,South ,Electronics,Jeans,13,$26.68,346.84
+190,14-01-2024,East,Food,Burger,39,473.9,18482.1
+122,02-01-2024,West,Food,Burger,50,28.66,1433.0
+65,2024/01/04,North, Food,Phone,46,83.4,3836.4
+106,01/02/2024,West, Food,Jacket,29,264.41,7667.89
+187,28-01-2024, North,Electronics,Jeans,27,196.96,5317.92
+10,25-01-2024,NORTH,Electronics,Jeans,,83.29,2332.12
+196,2024/01/25,East,Food,Laptop,31,56.75,1759.25
+132,05-01-2024,East,Clothing,Tablet,,455.8,15041.4
+137,2024-01-11,West,electronics,Shirt,18,$227.55,4095.9
+193,08-01-2024,north, Food,Pizza,46,214.45,9864.7
+160,,,CLOTHING,Tablet,30,284.14,8524.2
+28,01/08/2024,East,Clothing,Tablet,2,93.78,187.56
+177,2024/01/22,South ,Electronics,Laptop,,278.06,973210.0
+54,01/10/2024,North, Food,Pizza,,27.53,495.54
+64,2024/01/14,North,Clothing,Burger,40,379.44,15177.6
+59,2024/01/03,West,Food,Phone,28,61.81,1730.68
+23,2024-01-03,West,CLOTHING,Jeans,9,466.96,4202.64
+119,2024-01-17,North,electronics,Jacket,3,319.66,
+52,16-01-2024,NORTH,electronics,Burger,23,352.91,8116.93
+98,01/25/2024,north,Food,Burger,8,8.83,70.64
+1,2024-01-01,north,Clothing,Phone,9,369.55,332595.0
+82,21-01-2024, North,Electronics,Pizza,3,473.4,1420.2
+21,2024-01-20,South, Food,Phone,26,64.34,1672.84
+68,2024/01/28,East,electronics,Jacket,23,169.56,3899.88
+135,2024-01-16,north, Food,Jeans,31,126.21,3912.51
+24,2024-01-22,north, Food,Shirt,9,135.91,1223.19
+90,2024/01/04,South, Food,Phone,28,228.52,6398.56
+87,02-01-2024,East, Food,Tablet,,61.26,2082.84
+170,2024-01-18,West,Electronics,Jeans,25,338.47,8461.75
+33,22-01-2024, North,Food,Tablet,45,151.35,6810.75
+26,2024/01/18, North,CLOTHING,Laptop,8,42.25,338.0
+6,01/06/2024,South ,electronics,Jeans,41,345.64,14171.24
+161,01/19/2024,South,Electronics,Tablet,23,$351.69,8088.87
+67,01/28/2024,South,Food,Tablet,22,467.45,10283.9
+192,2024-01-24,South , Food,Phone,29,$399.85,11595.65
+120,2024-01-25,NORTH,Clothing,Laptop,23,275.28,6331.44
+136,2024/01/07,NORTH,CLOTHING,Pizza,21,431.44,9060.24
+25,17-01-2024,South ,Food,Laptop,6,$318.97,1913.82
+93,01/05/2024,South ,Clothing,Shirt,23,423.46,9739.58
+41,2024-01-28, North,electronics,Laptop,23,152.81,3514.63
+80,2024-01-05,West, Food,Tablet,36,$186.06,6698.16
+70,2024-01-05,NORTH,Electronics,Jacket,7,265.35,1857.45
+63,2024/01/27,North,electronics,Shirt,21,129.94,272874.0
+51,2024/01/16,West, Food,Jacket,42,$357.36,15009.12
+167,01/22/2024,West,electronics,Jeans,18,35.17,633.06
+179,2024/01/15,West, Food,Phone,20,343.6,6872.0
+19,2024/01/01, North,Food,Jacket,19,214.39,4073.41
+123,2024/01/11,East,electronics,Jacket,24,462.53,11100.72
+101,2024-01-13,north, Food,Burger,15,169.87,2548.05
+17,2024-01-02, North, Food,Burger,7,128.08,896.56
+88,2024-01-24,north,electronics,Laptop,4,499.3,1997.2
+165,2024-01-08,West,Electronics,Shirt,39,21.62,
+53,01/07/2024,West, Food,Jacket,18,363.67,6546.06
+115,2024-01-13,NORTH,Clothing,Tablet,,190.58,1143.48
+13,01/22/2024,South ,CLOTHING,Pizza,17,266.2,4525.4
+66,2024-01-21,East,electronics,Jeans,33,354.18,11687.94
+162,01/25/2024,East, Food,Tablet,24,496.46,11915.04
+141,2024/01/25,north,CLOTHING,Shirt,9,487.67,4389.03
+83,2024/01/19,East,electronics,Shirt,32,309.75,9912.0
+38,25-01-2024,South ,CLOTHING,Tablet,36,225.73,8126.28
+42,01/16/2024,West,Food,Tablet,32,19.37,619.84
+124,11-01-2024,South,Electronics,Burger,43,151.34,6507.62
+103,2024/01/22,NORTH, Food,Burger,10,222.68,2226.8
+30,01/13/2024,NORTH,Food,Shirt,50,143.17,7158.5
+171,2024/01/07,NORTH,Food,Laptop,14,468.89,6564.46
+134,01/06/2024,NORTH,CLOTHING,Laptop,2,45.21,90.42
+102,01/08/2024,South,Clothing,Jeans,13,90.88,1181.44
+73,2024-01-02,NORTH,Electronics,Jeans,23,190.55,4382.65
+184,2024/01/25,NORTH,Electronics,Jeans,29,247.85,7187.65
+133,17-01-2024,north,Electronics,Jeans,13,319.35,4151.55
+101,2024-01-13,north, Food,Burger,15,169.87,2548.05
+18,2024/01/26,South,Electronics,Laptop,6,463.55,2781.3
+110,01/05/2024,South,Food,Shirt,33,386.58,
+150,18-01-2024,north,Clothing,Shirt,40,$371.74,14869.6
+55,2024-01-19,north,electronics,Jacket,29,173.65,5035.85
+169,01/26/2024,South ,Electronics,Tablet,27,280.86,7583.22
+195,2024/01/25,NORTH,electronics,Shirt,1,53.81,53.81
+91,12-01-2024,East, Food,Jacket,5,50.16,250.8
+117,2024/01/04,north,Clothing,Jeans,8,28.64,229.12
+89,20-01-2024,East,Electronics,Pizza,18,314.04,5652.72
+76,2024/01/19,NORTH,CLOTHING,Jeans,45,151.14,6801.3
+142,2024/01/17,North,Electronics,Laptop,9,358.23,3224.07
+129,2024/01/03,NORTH, Food,Burger,46,37.14,1708.44
+128,2024-01-09,north, Food,Jacket,14,498.2,6974.8
+197,2024/01/26,West,CLOTHING,Jacket,23,240.7,5536.1
+104,2024/01/15,North,Electronics,Burger,19,42.98,816.62
+188,2024/01/06,East,Food,Jeans,,249.1,4483.8
+16,01/26/2024,South ,electronics,Phone,7,52.98,370.86
+168,21-01-2024, North,CLOTHING,Burger,45,211.08,9498.6
+147,18-01-2024,NORTH, Food,Jeans,40,244.67,9786.8
+12,2024-01-12,north,Clothing,Laptop,16,$439.61,7033.76
+156,13-01-2024,West,electronics,Jeans,22,$154.46,3398.12
+111,2024/01/05,East,Clothing,Pizza,47,221.65,10417.55
+176,2024-01-27,North,Electronics,Tablet,9,422.06,
+34,13-01-2024,North,Food,Jeans,14,217.79,3049.06
+175,2024/01/15,East, Food,Burger,11,74.28,817.08
+5,2024/01/09,South , Food,Burger,11,188.24,2070.64
+112,2024/01/08,West,Food,Jacket,13,187.08,2432.04
+39,2024/01/21,West,Food,Jacket,5,358.2,1791.0
+32,02-01-2024, North,Electronics,Phone,24,218.49,5243.76
+97,14-01-2024,,Food,Jacket,,335.23,11397.82
+84,04-01-2024,NORTH,CLOTHING,Burger,4,202.08,808.32
+154,15-01-2024,South ,Clothing,Jacket,18,100.44,1807.92
+95,01/24/2024,North,Electronics,Phone,25,212.82,5320.5
+27,01/02/2024,north,Food,Laptop,23,108.99,2506.77
+182,01-01-2024,West,CLOTHING,Pizza,49,411.24,20150.76
+56,2024-01-05,East,CLOTHING,Jeans,6,496.99,2981.94
+113,01/27/2024,West,CLOTHING,Pizza,17,30.83,524.11
+11,2024-01-28,north, Food,Phone,10,190.09,1900.9
+94,2024-01-20,north,Electronics,Pizza,18,352.84,
+69,2024/01/08, North,Electronics,Burger,48,239.12,11477.76
+194,2024/01/18,,Food,Shirt,7,385.63,2699.41
+29,,South,electronics,Laptop,31,115.1,3568.1
+189,01/24/2024,South ,CLOTHING,Phone,30,57.95,1738.5
+157,06-01-2024, North, Food,Jeans,45,63.12,2840.4
+118,2024-01-21,West, Food,Pizza,19,217.47,4131.93
+44,25-01-2024, North,Food,Shirt,31,14.59,452.29
+172,01/13/2024,West,CLOTHING,Burger,50,145.11,7255.5
+191,2024/01/19,West,Food,Tablet,18,409.16,7364.88
+58,2024-01-06,West,Clothing,Shirt,11,6.32,69.52
+71,11-01-2024, North, Food,Shirt,22,426.91,9392.02
+9,2024/01/20,,electronics,Tablet,39,498.08,19425.12
+75,01/03/2024,South ,Food,Jeans,41,481.2,19729.2
+57,2024/01/15,north,CLOTHING,Tablet,,286.47,5729.4
+8,24-01-2024,,CLOTHING,Tablet,24,113.56,2725.44
+145,01/17/2024, North,Clothing,Phone,3,288.42,865.26
+157,06-01-2024, North, Food,Jeans,45,63.12,2840.4
+174,2024/01/10,East,Clothing,Burger,15,193.02,2895.3
+155,19-01-2024,West,Clothing,Tablet,28,260.06,7281.68
+114,,East,Food,Jacket,33,77.94,2572.02
+107,2024-01-26,NORTH,Electronics,Burger,7,281.19,1968.33
+200,2024-01-19,South,CLOTHING,Pizza,24,166.36,3992.64
+105,2024-01-15,West,Food,Jacket,,79.68,2629.44
+127,2024/01/25,,CLOTHING,Pizza,34,186.64,6345.76
+130,17-01-2024,West,Electronics,Phone,9,122.18,1099.62
+144,2024-01-14,north, Food,Laptop,39,239.92,9356.88
+183,13-01-2024,East, Food,Shirt,33,$374.0,12342.0
+50,06-01-2024,,Clothing,Burger,17,173.47,2948.99
+199,01/06/2024, North,electronics,Laptop,48,308.98,14831.04
+180,2024/01/02,North, Food,Pizza,6,252.43,1514.58
+3,01/25/2024,NORTH,Electronics,Shirt,25,52.87,1321.75
+92,22-01-2024,South,electronics,Burger,43,470.86,
+14,2024/01/22,NORTH,electronics,Jacket,,$127.71,102168.0
+159,2024-01-02,West,CLOTHING,Pizza,11,167.42,1841.62
+116,27-01-2024,South , Food,Pizza,49,$354.24,17357.76
+198,21-01-2024,South, Food,Pizza,48,125.74,6035.52
+91,12-01-2024,East, Food,Jacket,5,50.16,250.8
+185,26-01-2024,West, Food,Shirt,6,137.65,825.9
+74,2024/01/20,West,electronics,Pizza,15,233.27,
+126,2024/01/02,East,Electronics,Phone,50,324.36,
+43,2024-01-13,North,Electronics,Tablet,9,434.09,3906.81
+143,06-01-2024, North,CLOTHING,Jeans,38,171.5,6517.0
+159,2024-01-02,West,CLOTHING,Pizza,11,167.42,1841.62
+166,01/25/2024,North,Clothing,Jeans,15,408.81,6132.15
+138,01/27/2024,NORTH,CLOTHING,Burger,13,382.75,497575.0
+163,01/21/2024,NORTH,Electronics,Pizza,35,199.56,6984.6
+125,20-01-2024, North,Food,Laptop,5,337.24,1686.2
+48,2024/01/04, North,Food,Jacket,46,80.73,3713.58
+109,01/22/2024,South, Food,Tablet,33,184.1,6075.3
+99,03-01-2024, North, Food,Laptop,28,14.28,399.84
+148,01/23/2024,South ,Food,Jacket,23,282.44,6496.12
+36,2024/01/20,South,electronics,Tablet,41,289.96,11888.36
+153,01/02/2024, North,electronics,Pizza,48,481.26,
+108,2024-01-19,East,Food,Jeans,42,350.75,14731.5
+100,2024-01-13,North,Food,Pizza,40,232.75,9310.0
+131,2024-01-03,north,electronics,Jacket,34,208.34,7083.56
+37,2024-01-25, North,Clothing,Pizza,,261.39,11762.55
+178,2024/01/26,East,Electronics,Shirt,34,78.7,2675.8
+96,2024-01-05,East,CLOTHING,Laptop,44,45.38,1996.72
+47,01/04/2024,north, Food,Shirt,37,392.4,14518.8
+30,01/13/2024,NORTH,Food,Shirt,50,143.17,7158.5
+79,01/05/2024,NORTH,CLOTHING,Jeans,11,132.2,1454.2
+62,01/19/2024, North, Food,Jacket,6,237.66,1425.96
+31,06-01-2024,north,Electronics,Shirt,39,220.11,8584.29
+81,2024/01/27,NORTH,Electronics,Phone,31,17.39,539.09
+35,01/22/2024,South,Food,Burger,6,410.12,246071.99999999997
+118,2024-01-21,West, Food,Pizza,19,217.47,4131.93
+22,,West, Food,Burger,16,136.48,2183.68
+152,11-01-2024,north, Food,Laptop,50,49.28,2464.0
+158,14-01-2024,South ,CLOTHING,Phone,49,127.5,6247.5
+77,2024-01-20,South ,Food,Phone,39,401.96,15676.44
+90,2024/01/04,South, Food,Phone,28,228.52,6398.56
+181,2024-01-08,West, Food,Jacket,,28.05,504.9
+173,2024/01/25,NORTH,Clothing,Burger,21,209.9,4407.9
+45,2024-01-08,West,Electronics,Pizza,16,67.48,1079.68

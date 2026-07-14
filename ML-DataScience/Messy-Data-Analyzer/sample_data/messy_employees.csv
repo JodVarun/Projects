@@ -1,0 +1,257 @@
+emp_id,name,department,position,salary,experience_years,performance_score,join_date
+153,Raj Kumar,Sales,Lead,139562,21,1.5,2024-09-05
+164,Priya Sharma,sales,Intern,134145,19,3.3,2024-04-03
+59,anita desai,hr,Director,32453,11,2.0,2020-11-18
+227,Priya Sharma,HR,Lead,137658,20,3.4,2020-12-26
+17,Raj Kumar,engineering,Intern,,22,2.6,2020-03-14
+50,Raj Kumar,Sales,Manager,94694,13,4.2,2022-08-23
+193,NEHA GUPTA,HR,Senior Dev,50257,6,3.2,2024-09-23
+114, Vikram Singh,HR,Intern,48554,25,2.0,2020-05-20
+60,anita desai,Marketing,Analyst,110352,13,1.4,2024/11/03
+163,anita desai,HR,Junior Dev,46673,,2.1,2020-08-15
+250,anita desai,ENGINEERING,Manager,135001,25,4.6,2024-03-12
+36,amit patel,Engineering,Lead,51409,8,3.5,2023-12-11
+53,amit patel,ENGINEERING,Director,127612,16,2.9,2022-04-12
+108,amit patel,engineering,Senior Dev,34085,12,4.4,2024-10-13
+87,anita desai,sales,Senior Dev,43994,0,3.4,2022-10-19
+70,Priya Sharma,engineering,Director,93246,22,4.3,2020-10-21
+85,Priya Sharma,ENGINEERING,Junior Dev,147786,4,4.6,2021-11-19
+130,anita desai,sales,Lead,98597,2,3.5,2020-11-21
+34,NEHA GUPTA,sales,Lead,47188,21,1.4,2022-04-18
+1,Priya Sharma,Sales,Director,87163,11,3.9,2023-08-15
+103,Priya Sharma,Marketing,Intern,95239,5,1.9,2022-04-01
+18, Vikram Singh,hr,Intern,66118,12,2.7,2024-08-06
+105,Raj Kumar,sales,Junior Dev,72457,3,2.4,2024-10-01
+82,NEHA GUPTA,hr,Director,75453,11,1.9,2024/05/26
+10,Raj Kumar,Marketing,Director,57617,20,1.1,2020-03-19
+204,Raj Kumar,ENGINEERING,Lead,107405,23,4.9,2020-06-07
+89,Priya Sharma,Sales,Senior Dev,,0,4.8,2021-12-22
+211,Priya Sharma,Engineering,Lead,1074690,19,4.1,2022/06/02
+143,Raj Kumar,hr,Lead,37872,8,1.3,2021-10-13
+16,amit patel,engineering,Lead,92539,2,4.5,2023/05/07
+121,Priya Sharma,ENGINEERING,Director,126910,18,1.5,2024-08-11
+231,Priya Sharma,sales,Intern,,23,4.0,2023-12-01
+212,amit patel,HR,Analyst,33525,20,1.4,2022-06-14
+181,anita desai,engineering,Director,35253,17,1.1,2024-04-15
+167,Raj Kumar,Marketing,Lead,103202,22,4.8,2021-06-10
+94,Priya Sharma,Marketing,Intern,147413,14,2.3,2021-12-24
+6,Priya Sharma,Marketing,Senior Dev,,1,3.1,2022-07-16
+84,Priya Sharma,hr,Senior Dev,85897,19,3.2,2021-11-05
+148,anita desai,Sales,Senior Dev,80353,9,4.6,2022-08-03
+240,amit patel,Engineering,Manager,111219,12,1.5,2024-01-19
+72,anita desai,hr,Manager,35397,18,3.0,2021-03-02
+241,NEHA GUPTA,HR,Lead,71591,13,1.5,2020-03-16
+42,NEHA GUPTA,engineering,Manager,50352,12,2.0,2022-08-21
+27, Vikram Singh,Engineering,Lead,38854,25,3.7,2021-06-14
+199, Vikram Singh,engineering,Manager,130039,,1.8,2022-03-25
+200,Raj Kumar,Sales,Intern,92221,18,3.7,2020-03-27
+19,amit patel,sales,Intern,122470,4,3.6,2021-08-26
+96, Vikram Singh,ENGINEERING,Senior Dev,53444,1,2.2,2023-05-21
+83,NEHA GUPTA,Engineering,Intern,59567,12,1.4,2023-09-22
+152,Priya Sharma,Engineering,Junior Dev,42752,5,1.3,2020-02-16
+184,Raj Kumar,sales,Junior Dev,88402,2,4.6,2023-08-10
+217,amit patel,engineering,Intern,92294,11,3.6,2022-09-26
+126,anita desai,hr,Lead,101449,5,1.8,2023-06-27
+165,Priya Sharma,Marketing,Analyst,31901,23,2.0,2023-10-08
+100,amit patel,ENGINEERING,Lead,77210,2,2.3,2023-02-25
+182, Vikram Singh,Sales,Intern,132404,8,1.3,2023-11-22
+115,Raj Kumar,ENGINEERING,Manager,118538,12,,2023-07-06
+86, Vikram Singh,engineering,Senior Dev,145295,0,4.5,2023-07-10
+141,anita desai,Sales,Intern,122808,2,1.5,2024-03-04
+202,amit patel,Marketing,Manager,89892,9,4.4,2021-09-14
+31, Vikram Singh,sales,Lead,105584,16,2.9,2024-01-17
+248, Vikram Singh,Marketing,Junior Dev,126248,25,1.8,2020-11-10
+232,Priya Sharma,Marketing,Analyst,30403,20,3.3,2020-03-08
+37, Vikram Singh,sales,Junior Dev,,21,1.8,2024-11-21
+227,Priya Sharma,HR,Lead,137658,20,3.4,2020-12-26
+80,Raj Kumar,hr,Director,141684,11,1.1,2023-04-13
+99,Raj Kumar,ENGINEERING,Analyst,,19,4.7,2020-02-14
+113,Priya Sharma,sales,Junior Dev,131290,3,1.6,2020-01-20
+45,Raj Kumar,Marketing,Junior Dev,640530,0,,2021-06-10
+97,Priya Sharma,Engineering,Intern,31600,15,1.0,2023-04-07
+136,Priya Sharma,HR,Manager,129022,1,2.6,2022-08-24
+122,Priya Sharma,sales,Lead,,19,2.5,2023/11/22
+98,NEHA GUPTA,Marketing,Manager,30861,17,3.5,2021-01-06
+144,Priya Sharma,hr,Senior Dev,43926,22,1.1,2020-10-24
+9,NEHA GUPTA,ENGINEERING,Senior Dev,114341,4,2.4,2020-11-08
+149,Priya Sharma,ENGINEERING,Manager,124337,7,1.3,2024-11-10
+41,anita desai,Sales,Director,1275010,2,2.6,2020-02-16
+74,NEHA GUPTA,ENGINEERING,Analyst,103308,12,1.8,2024-12-17
+126,anita desai,hr,Lead,101449,5,1.8,2023-06-27
+115,Raj Kumar,ENGINEERING,Manager,118538,12,,2023-07-06
+171,Raj Kumar,HR,Junior Dev,103241,17,1.8,2022-04-18
+8, Vikram Singh,engineering,Intern,148914,12,4.5,2023/08/20
+157, Vikram Singh,Engineering,Intern,95521,2,4.1,2022-07-01
+186,NEHA GUPTA,engineering,Manager,149853,5,3.8,2021-04-06
+79,anita desai,Engineering,Lead,116969,8,2.1,2024-05-02
+210,Priya Sharma,Marketing,Lead,123811,24,3.7,2024-11-18
+192,anita desai,sales,Junior Dev,120222,17,4.3,2020-03-17
+189,Raj Kumar,HR,Intern,871560,20,4.9,2020-06-17
+52,NEHA GUPTA,Marketing,Senior Dev,34392,23,3.1,2021-08-13
+175, Vikram Singh,ENGINEERING,Lead,88177,0,1.3,2021-09-21
+140,Raj Kumar,hr,Manager,119849,7,2.0,2020/01/20
+201,Priya Sharma,Sales,Lead,711930,3,3.0,2022-12-10
+71, Vikram Singh,hr,Manager,131043,13,4.5,2021-12-21
+178,anita desai,ENGINEERING,Senior Dev,35393,18,2.0,2021-04-18
+133,amit patel,Engineering,Junior Dev,46622,25,1.5,2022-05-28
+223,NEHA GUPTA,Engineering,Manager,41000,9,4.6,2023-06-22
+213,Priya Sharma,Sales,Director,41133,2,1.5,2021-01-18
+161, Vikram Singh,HR,Lead,118716,7,2.3,2020-04-24
+56,anita desai,ENGINEERING,Director,44076,7,3.2,2022-08-24
+92,anita desai,Engineering,Senior Dev,82171,24,2.8,2023-05-20
+177,amit patel,sales,Analyst,49443,14,3.5,2021-12-18
+14, Vikram Singh,hr,Analyst,42622,19,4.5,2024-09-25
+159,anita desai,Marketing,Lead,117836,1,2.1,2023-05-11
+43,Priya Sharma,Engineering,Manager,142770,15,4.5,2022-09-15
+138,Raj Kumar,engineering,Intern,140656,20,2.3,2022-02-09
+51,Priya Sharma,Engineering,Junior Dev,39356,5,4.4,2023-01-04
+179,amit patel,ENGINEERING,Junior Dev,51311,3,2.6,2023-03-15
+73,NEHA GUPTA,engineering,Senior Dev,133070,4,2.9,2020-09-13
+128,NEHA GUPTA,hr,Intern,96770,14,1.9,2023-10-01
+26, Vikram Singh,sales,Intern,105352,14,3.3,2021-06-25
+32,Priya Sharma,Marketing,Manager,90302,0,,2021-07-19
+224,anita desai,ENGINEERING,Senior Dev,126269,3,4.3,2024-05-16
+235,anita desai,Sales,Manager,55987,5,,2024-07-20
+111,Priya Sharma,engineering,Analyst,976520,4,1.1,2023-12-28
+215,anita desai,Sales,Junior Dev,136359,10,2.2,2023-04-16
+230,NEHA GUPTA,Engineering,Junior Dev,137898,15,2.7,2022-12-14
+63,anita desai,hr,Analyst,122855,19,1.2,2020-05-03
+57,amit patel,ENGINEERING,Junior Dev,93609,17,3.8,2021-10-06
+90,Raj Kumar,ENGINEERING,Lead,94217,14,2.7,2020-10-24
+247,amit patel,ENGINEERING,Manager,1388810,15,4.8,2024-11-01
+220,Priya Sharma,HR,Lead,49722,24,2.7,2022-02-21
+173, Vikram Singh,engineering,Lead,118907,9,2.5,2020/04/15
+180,anita desai,HR,Director,92116,24,3.3,2021-10-24
+15,Priya Sharma,Engineering,Analyst,86557,11,3.8,2023-04-26
+3,anita desai,Engineering,Analyst,83101,6,3.2,2024-09-16
+168,Raj Kumar,Marketing,Director,122183,18,1.1,2023-08-25
+61,Priya Sharma,Engineering,Senior Dev,55115,18,2.6,2023-09-20
+226,NEHA GUPTA,hr,Junior Dev,37330,11,1.5,2024-07-16
+196,Raj Kumar,hr,Director,44643,24,2.7,2021-02-02
+147, Vikram Singh,HR,Junior Dev,82509,20,3.1,2022-02-27
+195, Vikram Singh,HR,Senior Dev,33769,3,4.4,2021-12-08
+139,anita desai,Sales,Director,130990,10,5.0,2022-09-01
+228,NEHA GUPTA,sales,Director,77560,21,4.5,2023-07-01
+62,amit patel,Sales,Intern,31715,6,4.7,2020-08-26
+38,amit patel,HR,Junior Dev,93896,14,2.5,2022-08-21
+124,anita desai,sales,Lead,149946,2,3.4,2024-07-28
+54,Priya Sharma,engineering,Senior Dev,72534,,3.3,2023-04-01
+7,Raj Kumar,HR,Manager,98337,8,2.1,2024-10-06
+207,NEHA GUPTA,Engineering,Senior Dev,119024,9,1.4,2020-11-25
+236,amit patel,ENGINEERING,Intern,124186,24,2.8,2023-02-08
+29,Priya Sharma,Sales,Lead,60783,8,1.8,2021-10-12
+49,amit patel,Marketing,Senior Dev,49942,,1.7,2020-05-09
+156,anita desai,sales,Lead,133840,22,1.6,2022-09-15
+35,Priya Sharma,ENGINEERING,Lead,53148,4,4.4,2024-09-24
+216,Raj Kumar,Sales,Junior Dev,68970,12,3.5,2020-12-28
+23, Vikram Singh,Sales,Intern,34726,20,,2021-02-09
+191,Raj Kumar,sales,Junior Dev,40069,24,4.1,2024-03-18
+246,Raj Kumar,Sales,Analyst,42360,0,4.9,2020-07-12
+93,Priya Sharma,Marketing,Analyst,41854,3,3.3,2024-03-13
+78,NEHA GUPTA,Engineering,Junior Dev,100517,17,2.0,2023-10-24
+125,amit patel,Engineering,Manager,137577,3,4.5,2021-07-23
+104,Raj Kumar,Sales,Analyst,84346,10,4.2,2021-01-21
+118,amit patel,hr,Senior Dev,117186,10,1.1,2023-02-12
+219,NEHA GUPTA,Sales,Director,127282,8,3.1,2024-07-19
+44, Vikram Singh,ENGINEERING,Intern,112712,18,3.6,2024-05-12
+4,NEHA GUPTA,Sales,Analyst,142350,14,1.4,2022-09-01
+187,NEHA GUPTA,Engineering,Analyst,139390,15,2.9,2020-01-05
+102,anita desai,engineering,Lead,109269,22,3.4,2022-05-17
+2, Vikram Singh,engineering,Senior Dev,40744,4,1.8,2020-12-03
+188,anita desai,Marketing,Manager,147006,5,3.8,2021-01-04
+137,Priya Sharma,hr,Director,92205,16,1.0,2023-07-22
+222,anita desai,Engineering,Senior Dev,47882,,2.1,2024-03-21
+203,Priya Sharma,engineering,Analyst,119015,0,3.0,2020-07-15
+67,Priya Sharma,hr,Analyst,127593,14,2.6,2020/05/20
+155,Raj Kumar,ENGINEERING,Manager,112863,24,4.5,2020-01-01
+190,amit patel,ENGINEERING,Intern,,22,1.7,2022-06-14
+169,Priya Sharma,HR,Director,113021,,2.5,2022-09-02
+55,anita desai,Marketing,Director,78679,7,1.4,2024-06-25
+245,Priya Sharma,ENGINEERING,Director,65755,21,3.3,2020-09-25
+238,Priya Sharma,Engineering,Junior Dev,60865,7,3.7,2023-02-01
+68,amit patel,Engineering,Junior Dev,58157,0,4.8,2022-09-17
+160,NEHA GUPTA,Engineering,Manager,100432,25,,2024-02-03
+116,anita desai,Marketing,Intern,73559,22,4.2,2020-08-19
+172, Vikram Singh,Sales,Analyst,59548,8,2.7,2020-02-12
+117,anita desai,Marketing,Manager,119715,24,1.9,2021-03-28
+151,anita desai,Sales,Manager,,20,,2024-01-08
+81,amit patel,Marketing,Analyst,41537,16,3.2,2020-01-08
+214,NEHA GUPTA,hr,Junior Dev,,0,2.5,2023/06/19
+107,anita desai,Engineering,Analyst,104048,10,1.1,2024-11-11
+225,Raj Kumar,HR,Junior Dev,126631,23,4.7,2021-03-04
+205,NEHA GUPTA,engineering,Senior Dev,125053,24,3.3,2022-11-13
+101,amit patel,Marketing,Senior Dev,142644,16,1.8,2021-10-02
+47,NEHA GUPTA,Sales,Senior Dev,114671,12,1.3,2021-09-25
+46,NEHA GUPTA,Marketing,Junior Dev,,9,4.2,2024-06-07
+198,Priya Sharma,HR,Manager,140868,8,2.4,2021-09-25
+197,Raj Kumar,Marketing,Manager,35672,21,,2020-02-20
+30,Raj Kumar,Marketing,Intern,,1,2.5,2022-08-19
+5, Vikram Singh,ENGINEERING,Analyst,88487,18,3.6,2021-12-24
+129,Priya Sharma,sales,Lead,105543,1,3.8,2020-10-16
+221,amit patel,ENGINEERING,Junior Dev,60950,3,1.1,2022-08-16
+150,NEHA GUPTA,Engineering,Manager,74265,1,1.8,2024-08-22
+66, Vikram Singh,Marketing,Junior Dev,102100,10,2.6,2023-12-11
+91,NEHA GUPTA,Engineering,Intern,89886,1,2.0,2024/07/24
+65,anita desai,HR,Director,117194,3,1.7,2023-09-11
+209,Raj Kumar,hr,Lead,79327,1,,2024-11-28
+185,NEHA GUPTA,hr,Senior Dev,108372,6,5.0,2024-06-03
+170,anita desai,Sales,Analyst,111324,23,3.1,2022-01-04
+237,amit patel,sales,Director,47065,6,5.0,2022-12-22
+25,Priya Sharma,Sales,Lead,105354,,3.0,2024-02-17
+106,amit patel,Marketing,Lead,114626,4,4.6,2024-06-15
+249,Raj Kumar,hr,Manager,53332,24,1.4,2021-03-13
+131, Vikram Singh,Engineering,Junior Dev,31413,16,3.3,2022-07-12
+28,Raj Kumar,sales,Senior Dev,82288,10,4.7,2023-06-12
+239,anita desai,hr,Director,80265,23,1.3,2024-01-02
+12,amit patel,engineering,Senior Dev,91789,5,2.6,2021-10-27
+20,Priya Sharma,hr,Analyst,102165,21,1.6,2020-02-27
+142,NEHA GUPTA,engineering,Director,66226,22,4.1,2022-05-06
+13, Vikram Singh,sales,Senior Dev,74914,19,1.9,2023/03/04
+146,NEHA GUPTA,Marketing,Lead,125389,25,1.9,2023-12-27
+76,Priya Sharma,HR,Intern,135224,4,4.7,2021-04-22
+242,anita desai,HR,Lead,144941,24,3.1,2023-03-11
+134, Vikram Singh,ENGINEERING,Intern,116396,25,4.1,2021-08-06
+64,Raj Kumar,engineering,Director,80506,16,3.3,2021-09-24
+218,amit patel,Sales,Lead,111915,21,1.7,2020-11-23
+233,anita desai,ENGINEERING,Analyst,83780,10,4.5,2021-05-06
+33,amit patel,ENGINEERING,Intern,65311,19,1.7,2023-04-14
+39,anita desai,HR,Lead,104925,2,2.4,2022-06-21
+77,Raj Kumar,engineering,Director,,4,4.3,2020-06-23
+123,Priya Sharma,Engineering,Analyst,49558,9,3.3,2021-04-22
+206,NEHA GUPTA,Marketing,Intern,130663,3,3.0,2021-01-04
+21,NEHA GUPTA,engineering,Manager,78606,1,4.7,2023-10-21
+100,amit patel,ENGINEERING,Lead,77210,2,2.3,2023-02-25
+120,Priya Sharma,Sales,Intern,93225,10,3.8,2023-07-19
+75,NEHA GUPTA,HR,Director,41743,13,2.4,2022-06-20
+22, Vikram Singh,Engineering,Analyst,113924,0,3.6,2024/05/07
+229,amit patel,sales,Manager,129177,6,1.6,2023-11-11
+234,amit patel,Sales,Manager,53840,12,4.5,2021-01-01
+243,Priya Sharma,Marketing,Manager,37152,1,1.7,2023-07-04
+135,amit patel,engineering,Senior Dev,137704,15,2.7,2023-04-22
+127,anita desai,ENGINEERING,Senior Dev,,4,2.9,2023-03-03
+40,anita desai,hr,Junior Dev,1323630,11,3.1,2023-07-06
+183,NEHA GUPTA,Sales,Lead,109308,1,2.4,2021-12-28
+176,anita desai,HR,Lead,121339,17,2.2,2021-05-06
+166,Priya Sharma,Engineering,Lead,35250,23,1.1,2024-07-16
+58,NEHA GUPTA,sales,Analyst,1498610,5,1.6,2022-05-18
+174,Priya Sharma,sales,Manager,66168,4,4.5,2024-11-01
+119,amit patel,HR,Intern,96577,22,2.3,2020-05-18
+88,Priya Sharma,Engineering,Junior Dev,132213,16,2.9,2022-03-28
+132,amit patel,ENGINEERING,Manager,108333,23,2.0,2023-10-06
+11, Vikram Singh,Engineering,Intern,51802,5,2.6,2024-11-01
+132,amit patel,ENGINEERING,Manager,108333,23,2.0,2023-10-06
+110,Raj Kumar,Sales,Manager,33268,16,2.4,2023-12-28
+162,Priya Sharma,engineering,Lead,37122,4,3.4,2021-07-12
+112,Raj Kumar,engineering,Junior Dev,36047,24,2.2,2024-05-21
+48,anita desai,sales,Junior Dev,99722,13,1.3,2021-05-04
+158, Vikram Singh,engineering,Intern,129762,16,4.1,2021-05-02
+95,NEHA GUPTA,HR,Manager,80343,16,1.6,2024-07-02
+208,NEHA GUPTA,Sales,Junior Dev,94258,17,4.4,2024/01/25
+52,NEHA GUPTA,Marketing,Senior Dev,34392,23,3.1,2021-08-13
+194,Raj Kumar,hr,Lead,45278,0,2.2,2022-03-27
+24,NEHA GUPTA,hr,Intern,32014,2,3.2,2024-10-12
+109,amit patel,HR,Director,,15,2.5,2022-04-17
+154,Priya Sharma,Engineering,Intern,38286,4,1.7,2022-09-06
+145,NEHA GUPTA,ENGINEERING,Director,34959,8,2.3,2023-10-01
+69,Priya Sharma,engineering,Manager,50461,11,2.0,2022-05-03
+244,Raj Kumar,Marketing,Junior Dev,103512,15,3.9,2021/02/12
