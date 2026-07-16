@@ -174,9 +174,12 @@ st.markdown("""
     
     /* Completely hide the expander toggle icon to prevent overlap */
     [data-testid="stExpanderToggleIcon"],
-    .streamlit-expanderHeader svg,
-    .streamlit-expanderHeader i,
-    .streamlit-expanderHeader span.material-symbols-rounded {
+    [data-testid="stExpander"] summary svg,
+    [data-testid="stExpander"] summary i,
+    [data-testid="stExpander"] summary span.material-symbols-rounded,
+    [data-testid="stExpander"] summary [data-testid="stIconMaterial"],
+    details summary svg,
+    details summary .stIcon {
         display: none !important;
     }
 
