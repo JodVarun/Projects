@@ -153,10 +153,16 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
 
+    /* Force-load Material Symbols so icons don't render as raw text */
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
     /* Hide the sidebar collapse/expand buttons */
     button[data-testid="stSidebarCollapseButton"],
     button[data-testid="baseButton-headerNoPadding"],
-    [data-testid="collapsedControl"] {
+    [data-testid="collapsedControl"],
+    .stSidebar button[kind="headerNoPadding"],
+    section[data-testid="stSidebar"] > div:first-child > button,
+    .st-emotion-cache-1aplgmp {
         display: none !important;
     }
 
