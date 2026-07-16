@@ -172,12 +172,12 @@ st.markdown("""
         color: #9ca3af;
     }
     
-    /* Hide icon text fallback in expanders to prevent overlapping */
-    .streamlit-expanderHeader svg text,
+    /* Completely hide the expander toggle icon to prevent overlap */
+    [data-testid="stExpanderToggleIcon"],
+    .streamlit-expanderHeader svg,
+    .streamlit-expanderHeader i,
     .streamlit-expanderHeader span.material-symbols-rounded {
         display: none !important;
-        font-size: 0 !important;
-        color: transparent !important;
     }
 
     /* Table */
@@ -264,6 +264,10 @@ def clean_ticker(ticker):
 
 # ── Main Pipeline ────────────────────────────────────────────────────────────
 if run_button:
+    st.session_state['run_optimization'] = True
+    st.session_state['run_backtest'] = False # Reset backtest on new run
+
+if st.session_state.get('run_optimization', False):
 
     # ── Phase 1: Data Acquisition ────────────────────────────────────────
     st.markdown('<div class="section-header">Phase 1 — Data Acquisition</div>', unsafe_allow_html=True)
@@ -297,12 +301,14 @@ if run_button:
         </div>
         """
 
-    st.markdown(
-        render_status("Price History", f"{prices.shape[1]} assets, {prices.shape[0]} trading days", t_prices, prices_cached) +
-        render_status("Market Index", "Nifty 50 benchmark for CAPM", t_market, market_cached) +
-        render_status("Fundamentals", f"P/E, ROE for {len(fundamentals)} tickers", t_fund, fund_cached),
-        unsafe_allow_html=True
-    )
+    if run_button or 'status_html' not in st.session_state:
+        st.session_state['status_html'] = (
+            render_status("Price History", f"{prices.shape[1]} assets, {prices.shape[0]} trading days", t_prices, prices_cached) +
+            render_status("Market Index", "Nifty 50 benchmark for CAPM", t_market, market_cached) +
+            render_status("Fundamentals", f"P/E, ROE for {len(fundamentals)} tickers", t_fund, fund_cached)
+        )
+    
+    st.markdown(st.session_state['status_html'], unsafe_allow_html=True)
 
 
     # ── Phase 2: Factor Screening ────────────────────────────────────────
@@ -443,12 +449,12 @@ if run_button:
         st.dataframe(summary_df, use_container_width=True, hide_index=False)
 
         # Store results in session state for backtest
-        st.session_state['opt_prices'] = prices
-        st.session_state['opt_weights'] = weights
-        st.session_state['opt_market_prices'] = market_prices
-        st.session_state['opt_risk_free_rate'] = risk_free_rate
-        st.session_state['optimization_done'] = True
-
+        if run_button:
+            st.session_state['opt_prices'] = prices
+            st.session_state['opt_weights'] = weights
+            st.session_state['opt_market_prices'] = market_prices
+            st.session_state['opt_risk_free_rate'] = risk_free_rate
+            st.session_state['optimization_done'] = True
 
     except Exception as e:
         st.error(f"Optimization could not converge. This can happen when selected stocks have insufficient price history or negative expected returns. Try adjusting your strategy or increasing the number of stocks.")
