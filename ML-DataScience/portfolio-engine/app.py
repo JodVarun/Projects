@@ -436,12 +436,61 @@ if run_button:
 
         st.dataframe(summary_df, use_container_width=True, hide_index=False)
 
+        # Store results in session state for backtest
+        st.session_state['opt_prices'] = prices
+        st.session_state['opt_weights'] = weights
+        st.session_state['opt_market_prices'] = market_prices
+        st.session_state['opt_risk_free_rate'] = risk_free_rate
+        st.session_state['optimization_done'] = True
 
-        # ── Phase 4: Backtesting ──────────────────────────────────────────
-        st.markdown('<div class="section-header">Phase 4 — Historical Backtest</div>', unsafe_allow_html=True)
 
+    except Exception as e:
+        st.error(f"Optimization could not converge. This can happen when selected stocks have insufficient price history or negative expected returns. Try adjusting your strategy or increasing the number of stocks.")
+        with st.expander("Technical details"):
+            st.code(str(e))
+
+
+# ── Empty State ──────────────────────────────────────────────────────────────
+else:
+    st.markdown("""
+    <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        color: #374151;
+        text-align: center;
+    ">
+        <div style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Configure & Execute</div>
+        <div style="font-size: 0.9rem; color: #4b5563; max-width: 480px; line-height: 1.7;">
+            Adjust factor weights and optimization parameters in the sidebar, then press <strong style="color:#10b981;">Execute Optimization</strong> to generate your optimal portfolio.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+# ── Phase 4: Backtest (separate button) ──────────────────────────────────────
+if st.session_state.get('optimization_done', False):
+
+    st.markdown("---")
+    st.markdown('<div class="section-header">Phase 4 — Historical Backtest</div>', unsafe_allow_html=True)
+
+    backtest_button = st.button("Run 3-Year Backtest", type="secondary", use_container_width=True)
+
+    if backtest_button:
+        st.session_state['run_backtest'] = True
+
+    if st.session_state.get('run_backtest', False):
         try:
-            bt = run_backtest(prices, weights, market_prices, risk_free_rate=risk_free_rate, lookback_years=3)
+            with st.spinner("Running backtest..."):
+                bt = run_backtest(
+                    st.session_state['opt_prices'],
+                    st.session_state['opt_weights'],
+                    st.session_state['opt_market_prices'],
+                    risk_free_rate=st.session_state['opt_risk_free_rate'],
+                    lookback_years=3
+                )
 
             pm = bt["metrics"]
             bm = bt["bench_metrics"]
@@ -557,29 +606,3 @@ if run_button:
             st.warning("Backtest could not be completed.")
             with st.expander("Technical details"):
                 st.code(str(bt_err))
-
-
-    except Exception as e:
-        st.error(f"Optimization could not converge. This can happen when selected stocks have insufficient price history or negative expected returns. Try adjusting your strategy or increasing the number of stocks.")
-        with st.expander("Technical details"):
-            st.code(str(e))
-
-
-# ── Empty State ──────────────────────────────────────────────────────────────
-else:
-    st.markdown("""
-    <div style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 50vh;
-        color: #374151;
-        text-align: center;
-    ">
-        <div style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Configure & Execute</div>
-        <div style="font-size: 0.9rem; color: #4b5563; max-width: 480px; line-height: 1.7;">
-            Adjust factor weights and optimization parameters in the sidebar, then press <strong style="color:#10b981;">Execute Optimization</strong> to generate your optimal portfolio.
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
