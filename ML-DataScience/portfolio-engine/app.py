@@ -30,22 +30,22 @@ st.markdown("""
 
     /* Header */
     .engine-header {
-        padding: 2rem 0 1.5rem 0;
+        padding: 1.5rem 0 1rem 0;
         border-bottom: 1px solid rgba(255,255,255,0.06);
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .engine-header h1 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: #f0f2f5;
         letter-spacing: -0.02em;
         margin: 0;
     }
     .engine-header p {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         color: #6b7280;
-        margin: 0.5rem 0 0 0;
-        line-height: 1.6;
+        margin: 0.4rem 0 0 0;
+        line-height: 1.5;
     }
 
     /* Metric Cards */
@@ -53,24 +53,24 @@ st.markdown("""
         background: linear-gradient(135deg, #111827 0%, #1a2332 100%);
         border: 1px solid rgba(255,255,255,0.06);
         border-radius: 12px;
-        padding: 1.5rem;
+        padding: 1.25rem;
         text-align: center;
     }
     .metric-label {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: #6b7280;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
     }
     .metric-value {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: #f0f2f5;
     }
     .metric-value.positive { color: #10b981; }
-    .metric-value.neutral { color: #f59e0b; }
+    .metric-value.neutral  { color: #f59e0b; }
 
     /* Section Headers */
     .section-header {
@@ -79,9 +79,9 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: #4b5563;
-        padding-bottom: 0.75rem;
+        padding-bottom: 0.6rem;
         border-bottom: 1px solid rgba(255,255,255,0.04);
-        margin: 2rem 0 1rem 0;
+        margin: 1.5rem 0 0.75rem 0;
     }
 
     /* Data Status */
@@ -89,11 +89,11 @@ st.markdown("""
         background: #111827;
         border: 1px solid rgba(255,255,255,0.06);
         border-radius: 8px;
-        padding: 1rem 1.25rem;
+        padding: 0.75rem 1rem;
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        margin-bottom: 0.5rem;
+        gap: 0.6rem;
+        margin-bottom: 0.4rem;
     }
     .status-dot {
         width: 8px;
@@ -103,9 +103,8 @@ st.markdown("""
     }
     .status-dot.success { background: #10b981; box-shadow: 0 0 6px #10b98166; }
     .status-dot.cached  { background: #3b82f6; box-shadow: 0 0 6px #3b82f666; }
-    .status-dot.warning { background: #f59e0b; box-shadow: 0 0 6px #f59e0b66; }
     .status-text {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         color: #9ca3af;
     }
     .status-text strong { color: #d1d5db; font-weight: 600; }
@@ -123,55 +122,47 @@ st.markdown("""
         color: #6b7280;
     }
 
-    /* Preset buttons */
-    .preset-btn {
-        background: #111827;
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 8px;
-        padding: 0.6rem 0.75rem;
-        cursor: pointer;
-        text-align: center;
-        transition: border-color 0.2s;
+    /* Stock card in results */
+    .stock-card {
+        background: linear-gradient(135deg, #111827 0%, #162031 100%);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .preset-btn:hover {
-        border-color: #10b981;
-    }
-    .preset-btn-label {
-        font-size: 0.75rem;
+    .stock-card .stock-name {
+        font-size: 0.9rem;
         font-weight: 600;
-        color: #d1d5db;
+        color: #e5e7eb;
     }
-    .preset-btn-desc {
-        font-size: 0.65rem;
+    .stock-card .stock-weight {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #10b981;
+    }
+    .stock-card .stock-ticker {
+        font-size: 0.7rem;
         color: #6b7280;
         margin-top: 2px;
     }
 
-    /* Explanation box */
-    .explain-box {
-        background: #111827;
-        border: 1px solid rgba(255,255,255,0.06);
-        border-left: 3px solid #10b981;
-        border-radius: 0 8px 8px 0;
-        padding: 1rem 1.25rem;
-        margin: 1rem 0;
-    }
-    .explain-box p {
-        font-size: 0.8rem;
-        color: #9ca3af;
-        line-height: 1.65;
-        margin: 0;
-    }
-    .explain-box strong { color: #d1d5db; }
-
-    /* Hide Streamlit default elements */
+    /* Hide footer and main menu only — keep header for mobile hamburger */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+
+    /* Hide the sidebar collapse/expand buttons */
+    button[data-testid="stSidebarCollapseButton"],
+    button[data-testid="baseButton-headerNoPadding"],
+    [data-testid="collapsedControl"] {
+        display: none !important;
+    }
 
     /* Expander */
     .streamlit-expanderHeader {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         font-weight: 500;
         color: #9ca3af;
     }
@@ -185,17 +176,17 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ── Header ─────────────────────────────────────────────────────────────────────
+# ── Header ───────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="engine-header">
     <h1>Multi-Factor Quantitative Portfolio Engine</h1>
+    <p>Nifty 50 universe &middot; Quantitative screening &middot; Optimized allocation</p>
 </div>
 """, unsafe_allow_html=True)
 
 
 # ── Sidebar Controls ────────────────────────────────────────────────────────
 
-# Preset strategy profiles
 st.sidebar.markdown("## Strategy Profile")
 preset = st.sidebar.selectbox(
     "Choose a strategy",
@@ -218,13 +209,13 @@ st.sidebar.markdown("## What to prioritise")
 w_value = st.sidebar.slider(
     "Cheapness",
     0.0, 1.0, default_v, 0.1,
-    help="How much do you care about buying cheap stocks? Higher means the engine favours companies whose stock price is low relative to their earnings (low P/E ratio).",
+    help="How much do you care about buying cheap stocks? Higher means the engine favours companies whose stock price is low relative to their earnings.",
     disabled=(preset != "Custom")
 )
 w_quality = st.sidebar.slider(
     "Profitability",
     0.0, 1.0, default_q, 0.1,
-    help="How much do you care about well-run companies? Higher means the engine favours companies that generate more profit from their assets (high Return on Equity).",
+    help="How much do you care about well-run companies? Higher means the engine favours companies that generate more profit from their assets.",
     disabled=(preset != "Custom")
 )
 w_momentum = st.sidebar.slider(
@@ -239,17 +230,23 @@ st.sidebar.markdown("## Portfolio size")
 top_n = st.sidebar.slider(
     "Number of stocks to hold",
     5, 20, 10, 1,
-    help="How many stocks do you want in your final portfolio? Fewer stocks = more concentrated bets. More stocks = more diversified."
+    help="How many stocks do you want in your final portfolio? Fewer = concentrated. More = diversified."
 )
 risk_free_rate = st.sidebar.number_input(
     "Risk-free rate",
     value=0.065,
     format="%.3f",
-    help="The return you would get from a zero-risk investment like an Indian Government Bond (currently around 6.5%). The engine uses this as a baseline to judge whether stocks are worth the extra risk."
+    help="Return from a zero-risk investment like an Indian Government Bond (currently ~6.5%). Used as a baseline to judge if stocks are worth the extra risk."
 )
 
 st.sidebar.markdown("---")
 run_button = st.sidebar.button("Execute Optimization", type="primary", use_container_width=True)
+
+
+# ── Utility: clean ticker name ───────────────────────────────────────────────
+def clean_ticker(ticker):
+    """Convert 'RELIANCE.NS' to 'Reliance'"""
+    return ticker.replace(".NS", "").replace(".BO", "").replace("&", " & ").title()
 
 
 # ── Main Pipeline ────────────────────────────────────────────────────────────
@@ -258,17 +255,18 @@ if run_button:
     # ── Phase 1: Data Acquisition ────────────────────────────────────────
     st.markdown('<div class="section-header">Phase 1 — Data Acquisition</div>', unsafe_allow_html=True)
 
-    t0 = time.time()
-    prices = load_prices(NIFTY_50)
-    t_prices = time.time() - t0
+    with st.spinner("Loading market data..."):
+        t0 = time.time()
+        prices = load_prices(NIFTY_50)
+        t_prices = time.time() - t0
 
-    t0 = time.time()
-    market_prices = load_market_prices("^NSEI")
-    t_market = time.time() - t0
+        t0 = time.time()
+        market_prices = load_market_prices("^NSEI")
+        t_market = time.time() - t0
 
-    t0 = time.time()
-    fundamentals = load_fundamentals(NIFTY_50)
-    t_fund = time.time() - t0
+        t0 = time.time()
+        fundamentals = load_fundamentals(NIFTY_50)
+        t_fund = time.time() - t0
 
     # Determine cache status
     prices_cached = t_prices < 0.5
@@ -287,51 +285,36 @@ if run_button:
         """
 
     st.markdown(
-        render_status("Price History", f"{prices.shape[1]} assets, {prices.shape[0]} trading days from 2015", t_prices, prices_cached) +
-        render_status("Market Index", "Nifty 50 (^NSEI) benchmark for CAPM", t_market, market_cached) +
-        render_status("Fundamentals", f"P/E, ROE, D/E for {len(fundamentals)} tickers", t_fund, fund_cached),
+        render_status("Price History", f"{prices.shape[1]} assets, {prices.shape[0]} trading days", t_prices, prices_cached) +
+        render_status("Market Index", "Nifty 50 benchmark for CAPM", t_market, market_cached) +
+        render_status("Fundamentals", f"P/E, ROE for {len(fundamentals)} tickers", t_fund, fund_cached),
         unsafe_allow_html=True
     )
 
-    with st.expander("Inspect raw data (for advanced users)"):
-        st.dataframe(fundamentals, use_container_width=True)
-
 
     # ── Phase 2: Factor Screening ────────────────────────────────────────
-    st.markdown('<div class="section-header">Phase 2 — Picking the Best Stocks</div>', unsafe_allow_html=True)
-
-    st.markdown("""
-    <div class="explain-box">
-        <p>The engine just scored every stock on three dimensions — <strong>Cheapness</strong> (is the price fair?),
-        <strong>Profitability</strong> (does the company make good money?), and <strong>Recent Trend</strong> (is the stock price going up?).
-        It then blended those scores using your chosen weights and picked the top performers. These survivors move on to the optimizer.</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Phase 2 — Stock Selection</div>', unsafe_allow_html=True)
 
     top_tickers, df_ranked = screen_stocks(prices, fundamentals, w_value, w_quality, w_momentum, top_n)
 
-    display_df = df_ranked[['P/E', 'ROE', 'Momentum', 'Value_Rank', 'Quality_Rank', 'Momentum_Rank', 'Score']].head(top_n).copy()
-    display_df['Momentum'] = display_df['Momentum'].apply(lambda x: f"{x:.2%}" if pd.notna(x) else "—")
-    display_df['ROE'] = display_df['ROE'].apply(lambda x: f"{x:.2%}" if pd.notna(x) else "—")
-    display_df['P/E'] = display_df['P/E'].apply(lambda x: f"{x:.1f}" if pd.notna(x) else "—")
-    display_df['Score'] = display_df['Score'].apply(lambda x: f"{x:.3f}")
-    display_df['Value_Rank'] = display_df['Value_Rank'].apply(lambda x: f"{x:.0%}")
-    display_df['Quality_Rank'] = display_df['Quality_Rank'].apply(lambda x: f"{x:.0%}")
-    display_df['Momentum_Rank'] = display_df['Momentum_Rank'].apply(lambda x: f"{x:.0%}")
+    # Show just the selected stocks — clean and simple
+    selected = df_ranked.head(top_n)[['P/E', 'ROE', 'Momentum']].copy()
+    selected.index = [clean_ticker(t) for t in selected.index]
+    selected.columns = ['P/E Ratio', 'Return on Equity', '6-Month Return']
 
-    st.dataframe(display_df, use_container_width=True)
+    # Format values
+    selected['P/E Ratio'] = selected['P/E Ratio'].apply(lambda x: f"{x:.1f}" if pd.notna(x) else "—")
+    selected['Return on Equity'] = selected['Return on Equity'].apply(lambda x: f"{x:.1%}" if pd.notna(x) else "—")
+    selected['6-Month Return'] = selected['6-Month Return'].apply(lambda x: f"{x:+.1%}" if pd.notna(x) else "—")
+
+    st.markdown(f"**{len(top_tickers)} stocks selected** from the Nifty 50 universe based on your strategy weights.")
+
+    with st.expander("View selected stocks", expanded=True):
+        st.dataframe(selected, use_container_width=True, height=min(400, 36 + 35 * len(selected)))
 
 
     # ── Phase 3: Portfolio Optimization ──────────────────────────────────
-    st.markdown('<div class="section-header">Phase 3 — How Much to Invest in Each Stock</div>', unsafe_allow_html=True)
-
-    st.markdown("""
-    <div class="explain-box">
-        <p>Now the engine decides the exact percentage of your money to put into each stock.
-        It looks at how these stocks move together — if two stocks always rise and fall at the same time, it reduces exposure to avoid
-        putting all your eggs in one basket. The goal: <strong>maximise your expected profit per unit of risk taken</strong>. No single stock can exceed 20% of your portfolio.</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Phase 3 — Portfolio Allocation</div>', unsafe_allow_html=True)
 
     try:
         weights, exp_ret, vol, sharpe = optimize_portfolio(prices, top_tickers, market_prices, risk_free_rate=risk_free_rate)
@@ -341,14 +324,14 @@ if run_button:
         with col1:
             st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Projected Yearly Gain</div>
+                <div class="metric-label">Projected Annual Return</div>
                 <div class="metric-value positive">{exp_ret:.2%}</div>
             </div>
             """, unsafe_allow_html=True)
         with col2:
             st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Risk (Price Swings)</div>
+                <div class="metric-label">Annual Volatility</div>
                 <div class="metric-value neutral">{vol:.2%}</div>
             </div>
             """, unsafe_allow_html=True)
@@ -356,32 +339,33 @@ if run_button:
             sharpe_desc = 'Below average' if sharpe < 0.5 else 'Good' if sharpe < 1.0 else 'Excellent' if sharpe < 2.0 else 'Outstanding'
             st.markdown(f"""
             <div class="metric-card">
-                <div class="metric-label">Reward-to-Risk Score</div>
-                <div class="metric-value">{sharpe:.2f} <span style="font-size:0.7rem;color:#6b7280;font-weight:400">({sharpe_desc})</span></div>
+                <div class="metric-label">Sharpe Ratio</div>
+                <div class="metric-value">{sharpe:.2f} <span style="font-size:0.65rem;color:#6b7280;font-weight:400">({sharpe_desc})</span></div>
             </div>
             """, unsafe_allow_html=True)
 
         with st.expander("What do these numbers mean?"):
             st.markdown("""
-            - **Projected Yearly Gain** — If you invested today and held for a year, the model estimates your portfolio would grow by this percentage. This is a statistical estimate, not a guarantee.
-            - **Risk (Price Swings)** — How much the portfolio value is expected to fluctuate up and down over a year. Lower is calmer. A value of 20% means your portfolio could swing roughly +/-20% in a typical year.
-            - **Reward-to-Risk Score (Sharpe Ratio)** — How much return you get for every unit of risk. Higher is better. Below 0.5 is below average, 0.5-1.0 is good, above 1.0 is excellent. Think of it as the "efficiency" of your portfolio.
+            - **Projected Annual Return** — The model's statistical estimate of how much your portfolio would grow in a year. This is not a guarantee.
+            - **Annual Volatility** — How much the portfolio value may swing in a year. Lower is calmer.
+            - **Sharpe Ratio** — Return per unit of risk. Higher is better. Below 0.5 is weak, 0.5–1.0 is good, above 1.0 is excellent.
             """)
 
-        # ── Weights Visualisation ──
+        # ── Filter to non-zero weights and build display data ──
         weight_df = pd.DataFrame.from_dict(weights, orient='index', columns=['Weight'])
         weight_df = weight_df[weight_df['Weight'] > 0.001].reset_index()
         weight_df.columns = ['Ticker', 'Weight']
+        weight_df['Name'] = weight_df['Ticker'].apply(clean_ticker)
         weight_df = weight_df.sort_values('Weight', ascending=True)
 
-        st.markdown("<div style='height:1.5rem'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height:1rem'></div>", unsafe_allow_html=True)
 
-        col_chart, col_table = st.columns([3, 2])
+        col_chart, col_donut = st.columns([3, 2])
 
         with col_chart:
             fig = go.Figure(go.Bar(
                 x=weight_df['Weight'],
-                y=weight_df['Ticker'],
+                y=weight_df['Name'],
                 orientation='h',
                 marker=dict(
                     color=weight_df['Weight'],
@@ -394,10 +378,10 @@ if run_button:
                 textfont=dict(size=12, color='#9ca3af', family='Inter'),
             ))
             fig.update_layout(
-                title=dict(text="Optimal Portfolio Allocation", font=dict(size=14, color='#d1d5db', family='Inter')),
+                title=dict(text="Optimal Allocation", font=dict(size=14, color='#d1d5db', family='Inter')),
                 xaxis=dict(
                     tickformat='.0%',
-                    range=[0, max(weight_df['Weight']) * 1.3],
+                    range=[0, max(weight_df['Weight']) * 1.35],
                     gridcolor='rgba(255,255,255,0.03)',
                     tickfont=dict(color='#6b7280', family='Inter'),
                 ),
@@ -411,9 +395,9 @@ if run_button:
             )
             st.plotly_chart(fig, use_container_width=True)
 
-        with col_table:
+        with col_donut:
             fig_donut = go.Figure(go.Pie(
-                labels=weight_df['Ticker'],
+                labels=weight_df['Name'],
                 values=weight_df['Weight'],
                 hole=0.55,
                 marker=dict(
@@ -434,9 +418,22 @@ if run_button:
             )
             st.plotly_chart(fig_donut, use_container_width=True)
 
+        # ── Final Summary: Your Portfolio ──
+        st.markdown('<div class="section-header">Your Portfolio</div>', unsafe_allow_html=True)
+
+        summary_df = weight_df[['Name', 'Weight']].sort_values('Weight', ascending=False).copy()
+        summary_df['Allocation'] = summary_df['Weight'].apply(lambda w: f"{w:.1%}")
+        summary_df = summary_df[['Name', 'Allocation']].reset_index(drop=True)
+        summary_df.index = summary_df.index + 1
+        summary_df.columns = ['Stock', 'Allocation']
+
+        st.dataframe(summary_df, use_container_width=True, hide_index=False)
+
 
     except Exception as e:
-        st.error(f"Optimization could not converge. This typically occurs when selected stocks have negative CAPM expected returns or insufficient price history. Details: {e}")
+        st.error(f"Optimization could not converge. This can happen when selected stocks have insufficient price history or negative expected returns. Try adjusting your strategy or increasing the number of stocks.")
+        with st.expander("Technical details"):
+            st.code(str(e))
 
 
 # ── Empty State ──────────────────────────────────────────────────────────────
@@ -453,7 +450,7 @@ else:
     ">
         <div style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Configure & Execute</div>
         <div style="font-size: 0.9rem; color: #4b5563; max-width: 480px; line-height: 1.7;">
-            Adjust factor weights and optimization parameters in the sidebar, then press <strong style="color:#10b981;">Execute Optimization</strong> to generate the optimal Max Sharpe portfolio.
+            Adjust factor weights and optimization parameters in the sidebar, then press <strong style="color:#10b981;">Execute Optimization</strong> to generate your optimal portfolio.
         </div>
     </div>
     """, unsafe_allow_html=True)
