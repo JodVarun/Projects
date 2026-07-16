@@ -20,6 +20,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
     /* Global */
     html, body, [class*="st-"] {
@@ -154,9 +155,6 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
 
-    /* Force-load Material Symbols so icons don't render as raw text */
-    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-
     /* Hide the sidebar collapse/expand buttons */
     button[data-testid="stSidebarCollapseButton"],
     button[data-testid="baseButton-headerNoPadding"],
@@ -172,6 +170,14 @@ st.markdown("""
         font-size: 0.8rem;
         font-weight: 500;
         color: #9ca3af;
+    }
+    
+    /* Hide icon text fallback in expanders to prevent overlapping */
+    .streamlit-expanderHeader svg text,
+    .streamlit-expanderHeader span.material-symbols-rounded {
+        display: none !important;
+        font-size: 0 !important;
+        color: transparent !important;
     }
 
     /* Table */
