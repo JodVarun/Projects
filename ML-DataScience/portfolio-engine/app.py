@@ -6,6 +6,7 @@ import time
 from src.data_loader import load_prices, load_fundamentals, load_market_prices, NIFTY_50
 from src.screener import screen_stocks
 from src.optimizer import optimize_portfolio
+from src.backtester import run_backtest
 
 # ── Page Configuration ──────────────────────────────────────────────────────
 st.set_page_config(
@@ -434,6 +435,128 @@ if run_button:
         summary_df.columns = ['Stock', 'Allocation']
 
         st.dataframe(summary_df, use_container_width=True, hide_index=False)
+
+
+        # ── Phase 4: Backtesting ──────────────────────────────────────────
+        st.markdown('<div class="section-header">Phase 4 — Historical Backtest</div>', unsafe_allow_html=True)
+
+        try:
+            bt = run_backtest(prices, weights, market_prices, risk_free_rate=risk_free_rate, lookback_years=3)
+
+            pm = bt["metrics"]
+            bm = bt["bench_metrics"]
+
+            # ── Comparison Metrics ──
+            col_p, col_b = st.columns(2)
+            with col_p:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <div class="metric-label">Your Portfolio (3-Year Backtest)</div>
+                    <div class="metric-value positive">{pm['cagr']:.1%} <span style="font-size:0.6rem;color:#6b7280;font-weight:400">CAGR</span></div>
+                </div>
+                """, unsafe_allow_html=True)
+            with col_b:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <div class="metric-label">Nifty 50 Benchmark (3-Year)</div>
+                    <div class="metric-value" style="color:#6b7280;">{bm['cagr']:.1%} <span style="font-size:0.6rem;font-weight:400">CAGR</span></div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("<div style='height:0.5rem'></div>", unsafe_allow_html=True)
+
+            # ── Cumulative Return Chart ──
+            cum = bt["cumulative"]
+            fig_bt = go.Figure()
+            fig_bt.add_trace(go.Scatter(
+                x=cum.index, y=(cum["Portfolio"] - 1) * 100,
+                name="Your Portfolio",
+                line=dict(color="#10b981", width=2.5),
+                fill='tozeroy',
+                fillcolor='rgba(16,185,129,0.08)',
+            ))
+            fig_bt.add_trace(go.Scatter(
+                x=cum.index, y=(cum["Nifty 50"] - 1) * 100,
+                name="Nifty 50",
+                line=dict(color="#6b7280", width=1.5, dash='dot'),
+            ))
+            fig_bt.update_layout(
+                title=dict(text="Cumulative Return (%)", font=dict(size=14, color='#d1d5db', family='Inter')),
+                xaxis=dict(
+                    gridcolor='rgba(255,255,255,0.03)',
+                    tickfont=dict(color='#6b7280', family='Inter'),
+                ),
+                yaxis=dict(
+                    ticksuffix='%',
+                    gridcolor='rgba(255,255,255,0.03)',
+                    tickfont=dict(color='#6b7280', family='Inter'),
+                    zeroline=True,
+                    zerolinecolor='rgba(255,255,255,0.1)',
+                ),
+                legend=dict(font=dict(color='#9ca3af', family='Inter'), orientation='h', y=1.1),
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)',
+                height=400,
+                margin=dict(l=10, r=10, t=50, b=20),
+                hovermode='x unified',
+            )
+            st.plotly_chart(fig_bt, use_container_width=True)
+
+            # ── Drawdown Chart ──
+            with st.expander("Drawdown analysis"):
+                fig_dd = go.Figure()
+                fig_dd.add_trace(go.Scatter(
+                    x=bt["drawdown"].index, y=bt["drawdown"].values * 100,
+                    name="Portfolio Drawdown",
+                    line=dict(color="#ef4444", width=1.5),
+                    fill='tozeroy',
+                    fillcolor='rgba(239,68,68,0.1)',
+                ))
+                fig_dd.add_trace(go.Scatter(
+                    x=bt["bench_drawdown"].index, y=bt["bench_drawdown"].values * 100,
+                    name="Nifty 50 Drawdown",
+                    line=dict(color="#6b7280", width=1, dash='dot'),
+                ))
+                fig_dd.update_layout(
+                    title=dict(text="Drawdown from Peak (%)", font=dict(size=13, color='#d1d5db', family='Inter')),
+                    xaxis=dict(gridcolor='rgba(255,255,255,0.03)', tickfont=dict(color='#6b7280')),
+                    yaxis=dict(ticksuffix='%', gridcolor='rgba(255,255,255,0.03)', tickfont=dict(color='#6b7280')),
+                    legend=dict(font=dict(color='#9ca3af'), orientation='h', y=1.1),
+                    plot_bgcolor='rgba(0,0,0,0)',
+                    paper_bgcolor='rgba(0,0,0,0)',
+                    height=300,
+                    margin=dict(l=10, r=10, t=50, b=20),
+                    hovermode='x unified',
+                )
+                st.plotly_chart(fig_dd, use_container_width=True)
+
+            # ── Performance Comparison Table ──
+            with st.expander("Full performance comparison"):
+                comp_data = {
+                    "Metric": ["Total Return", "CAGR", "Annual Volatility", "Max Drawdown", "Period"],
+                    "Your Portfolio": [
+                        f"{pm['total_return']:+.1%}",
+                        f"{pm['cagr']:.1%}",
+                        f"{pm['annual_vol']:.1%}",
+                        f"{pm['max_drawdown']:.1%}",
+                        f"{bt['trading_days']} days ({bt['years']:.1f} yrs)",
+                    ],
+                    "Nifty 50": [
+                        f"{bm['total_return']:+.1%}",
+                        f"{bm['cagr']:.1%}",
+                        f"{bm['annual_vol']:.1%}",
+                        f"{bm['max_drawdown']:.1%}",
+                        f"{bt['trading_days']} days ({bt['years']:.1f} yrs)",
+                    ],
+                }
+                st.dataframe(pd.DataFrame(comp_data).set_index("Metric"), use_container_width=True)
+
+            st.caption("Backtest is hypothetical. Past performance does not guarantee future results. Weights are applied retroactively — this does not account for rebalancing costs or slippage.")
+
+        except Exception as bt_err:
+            st.warning("Backtest could not be completed.")
+            with st.expander("Technical details"):
+                st.code(str(bt_err))
 
 
     except Exception as e:
